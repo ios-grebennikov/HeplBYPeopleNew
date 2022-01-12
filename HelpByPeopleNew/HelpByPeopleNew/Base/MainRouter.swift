@@ -14,7 +14,7 @@ protocol Routable: UIViewController {
 class MainRouter: NSObject {
     
     var navigationController: UINavigationController
-    
+
     init(navigationController: UINavigationController) {
         navigationController.setNavigationBarHidden(true, animated: false)
         self.navigationController = navigationController
@@ -25,14 +25,27 @@ class MainRouter: NSObject {
         authVC.router = self
         pushViewController(vc: authVC)
     }
-    
+
     func pushRegisterVC() {
         let registerVC = RegisterViewController()
         registerVC.router = self
         pushViewController(vc: registerVC)
     }
     
+    func showTabBar() {
+//        let tabBarVC = TabBarViewController()
+//        tabBarVC.router = self
+//        pushViewController(vc: tabBarVC)
+        pushViewController(vc: TabBarViewController(router: self))
+    }
     
+    
+    
+    
+    func back() {
+        navigationController.popViewController(animated: true)
+    }
+
     
     //MARK: - Private Utils
     
@@ -40,5 +53,8 @@ class MainRouter: NSObject {
         vc.router = self
         navigationController.pushViewController(vc, animated: true)
     }
+    
+
+  
     
 }

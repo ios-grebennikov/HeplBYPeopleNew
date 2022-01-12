@@ -17,6 +17,7 @@
 		84C49F06278C2DF30090CDA7 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C49F05278C2DF30090CDA7 /* AppCoordinator.swift */; };
 		84C49F08278C2E9F0090CDA7 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C49F07278C2E9F0090CDA7 /* AuthViewController.swift */; };
 		84C49F0A278C2EAC0090CDA7 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C49F09278C2EAC0090CDA7 /* RegisterViewController.swift */; };
+		84C49F0C278EC3450090CDA7 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C49F0B278EC3450090CDA7 /* TabBarViewController.swift */; };
 		DD0E68869E516786E12EEC94 /* Pods_HelpByPeopleNew.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAD0B35199E4F21288A2F5DC /* Pods_HelpByPeopleNew.framework */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +36,7 @@
 		84C49F05278C2DF30090CDA7 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		84C49F07278C2E9F0090CDA7 /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
 		84C49F09278C2EAC0090CDA7 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		84C49F0B278EC3450090CDA7 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		CAD0B35199E4F21288A2F5DC /* Pods_HelpByPeopleNew.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HelpByPeopleNew.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -97,6 +99,7 @@
 			children = (
 				84C49F03278C2DD00090CDA7 /* MainRouter.swift */,
 				84C49F05278C2DF30090CDA7 /* AppCoordinator.swift */,
+				84C49F0B278EC3450090CDA7 /* TabBarViewController.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -239,6 +242,7 @@
 				84C49F0A278C2EAC0090CDA7 /* RegisterViewController.swift in Sources */,
 				84C49F06278C2DF30090CDA7 /* AppCoordinator.swift in Sources */,
 				84C49EEB278C232F0090CDA7 /* AppDelegate.swift in Sources */,
+				84C49F0C278EC3450090CDA7 /* TabBarViewController.swift in Sources */,
 				84C49F08278C2E9F0090CDA7 /* AuthViewController.swift in Sources */,
 				84C49EED278C232F0090CDA7 /* SceneDelegate.swift in Sources */,
 			);
