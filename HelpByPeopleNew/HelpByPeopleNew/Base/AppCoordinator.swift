@@ -28,8 +28,9 @@ class AppCoordinator: NSObject {
         router = MainRouter(navigationController: navController)
         
         //проверить
-//        router?.pushAuthVC()
-        router?.showTabBar()
+        router?.pushAuthVC()
+//        router?.showTabBar()
+    
         
         self.window.rootViewController = navController
         self.window.makeKeyAndVisible()

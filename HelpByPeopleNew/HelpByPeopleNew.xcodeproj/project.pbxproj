@@ -18,6 +18,8 @@
 		84C49F08278C2E9F0090CDA7 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C49F07278C2E9F0090CDA7 /* AuthViewController.swift */; };
 		84C49F0A278C2EAC0090CDA7 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C49F09278C2EAC0090CDA7 /* RegisterViewController.swift */; };
 		84C49F0C278EC3450090CDA7 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C49F0B278EC3450090CDA7 /* TabBarViewController.swift */; };
+		84C49F0F278EC7440090CDA7 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C49F0E278EC7440090CDA7 /* MapViewController.swift */; };
+		84C49F11278EC7540090CDA7 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C49F10278EC7540090CDA7 /* ProfileViewController.swift */; };
 		DD0E68869E516786E12EEC94 /* Pods_HelpByPeopleNew.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAD0B35199E4F21288A2F5DC /* Pods_HelpByPeopleNew.framework */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +39,8 @@
 		84C49F07278C2E9F0090CDA7 /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
 		84C49F09278C2EAC0090CDA7 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		84C49F0B278EC3450090CDA7 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		84C49F0E278EC7440090CDA7 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		84C49F10278EC7540090CDA7 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		CAD0B35199E4F21288A2F5DC /* Pods_HelpByPeopleNew.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HelpByPeopleNew.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -83,8 +87,6 @@
 			children = (
 				84C49F02278C2D600090CDA7 /* Controllers */,
 				84C49F01278C2D550090CDA7 /* Base */,
-				84C49EEA278C232F0090CDA7 /* AppDelegate.swift */,
-				84C49EEC278C232F0090CDA7 /* SceneDelegate.swift */,
 				84C49EF0278C232F0090CDA7 /* Main.storyboard */,
 				84C49EF3278C23310090CDA7 /* Assets.xcassets */,
 				84C49EF5278C23310090CDA7 /* LaunchScreen.storyboard */,
@@ -97,6 +99,8 @@
 		84C49F01278C2D550090CDA7 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				84C49EEA278C232F0090CDA7 /* AppDelegate.swift */,
+				84C49EEC278C232F0090CDA7 /* SceneDelegate.swift */,
 				84C49F03278C2DD00090CDA7 /* MainRouter.swift */,
 				84C49F05278C2DF30090CDA7 /* AppCoordinator.swift */,
 				84C49F0B278EC3450090CDA7 /* TabBarViewController.swift */,
@@ -107,10 +111,20 @@
 		84C49F02278C2D600090CDA7 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				84C49F0D278EC7040090CDA7 /* TabBar */,
 				84C49F07278C2E9F0090CDA7 /* AuthViewController.swift */,
 				84C49F09278C2EAC0090CDA7 /* RegisterViewController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		84C49F0D278EC7040090CDA7 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				84C49F0E278EC7440090CDA7 /* MapViewController.swift */,
+				84C49F10278EC7540090CDA7 /* ProfileViewController.swift */,
+			);
+			path = TabBar;
 			sourceTree = "<group>";
 		};
 		BD475F700CE5C23DDE8C8CD9 /* Pods */ = {
@@ -244,7 +258,9 @@
 				84C49EEB278C232F0090CDA7 /* AppDelegate.swift in Sources */,
 				84C49F0C278EC3450090CDA7 /* TabBarViewController.swift in Sources */,
 				84C49F08278C2E9F0090CDA7 /* AuthViewController.swift in Sources */,
+				84C49F11278EC7540090CDA7 /* ProfileViewController.swift in Sources */,
 				84C49EED278C232F0090CDA7 /* SceneDelegate.swift in Sources */,
+				84C49F0F278EC7440090CDA7 /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -33,15 +33,10 @@ class MainRouter: NSObject {
     }
     
     func showTabBar() {
-//        let tabBarVC = TabBarViewController()
-//        tabBarVC.router = self
-//        pushViewController(vc: tabBarVC)
         pushViewController(vc: TabBarViewController(router: self))
     }
     
-    
-    
-    
+ 
     func back() {
         navigationController.popViewController(animated: true)
     }
@@ -54,7 +49,10 @@ class MainRouter: NSObject {
         navigationController.pushViewController(vc, animated: true)
     }
     
+    private func presentViewController(vc: Routable, animated: Bool) {
+        vc.router = self
+        vc.modalPresentationStyle = .overFullScreen
+        navigationController.present(vc, animated: true)
+    }
 
-  
-    
 }
